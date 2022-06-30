@@ -26,7 +26,6 @@ jobs:
         add-to-path: true
     - name: Build gradle
       run: |
-        set -x +e
         mkdir -p "$GITHUB_WORKSPACE"
         export SIGNING_STORE_DIR="$RUNNER_TEMP/keystore"
         export SIGNING_STORE_FILE="$SIGNING_STORE_DIR/example.com.jks"
